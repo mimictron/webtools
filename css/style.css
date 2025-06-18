@@ -1,0 +1,42 @@
+header {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #e0e0e0;
+}
+nav {
+  list-style: none;   /* removes bullet points */
+  padding: 5px;
+  margin: 15px;
+  text-align: center; /* centers the list items */
+	background-color: #46cb1e ;
+
+}
+li {
+  display: inline;    /* or use inline-block for more control */
+  margin-right: 20px; /* space between items */
+}
+h2{
+    color: #c14fb9;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+footer {
+  display: flex;
+  justify-content: center;   /* centers the whole group horizontally */
+  gap: 20px;                 /* space between paragraphs */
+  padding: 20px;
+  font-size: small;
+}
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+
+   
+
+
+
+
+
