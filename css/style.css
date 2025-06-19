@@ -5,16 +5,17 @@ header {
     border-bottom: 2px solid #e0e0e0;
 }
 nav {
-  list-style: none;   /* removes bullet points */
+  list-style: none;   
   padding: 5px;
   margin: 15px;
-  text-align: center; /* centers the list items */
+  text-align: center; 
 	background-color: #46cb1e ;
 
 }
 li {
-  display: inline;    /* or use inline-block for more control */
-  margin-right: 20px; /* space between items */
+  display: inline;    /* displays list items in a row */
+  margin: 0 15px;    /* adds space between items */
+  margin-right: 20px; 
 }
 h2{
     color: #c14fb9;
@@ -23,13 +24,13 @@ h2{
 }
 footer {
   display: flex;
-  justify-content: center;   /* centers the whole group horizontally */
+  justify-content: center;   /* centers the whole horizontally */
   gap: 20px;                 /* space between paragraphs */
   padding: 20px;
   font-size: small;
 }
 img {
-  display: block;
+  display: block;    /* ensures the image is treated as a block element */
   margin: 0 auto;
 }
 
