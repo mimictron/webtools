@@ -1,43 +1,70 @@
+/* Visual styles */
 header {
     background-color: #f8f9fa;
-    padding: 20px;
-    text-align: center;
-    border-bottom: 2px solid #e0e0e0;
 }
-nav {
-  list-style: none;   
-  padding: 5px;
-  margin: 15px;
-  text-align: center; 
-	background-color: #46cb1e ;
 
+nav {
+    background-color: #46cb1e;
 }
-li {
-  display: inline;    /* displays list items in a row */
-  margin: 0 15px;    /* adds space between items */
-  margin-right: 20px; 
-}
-h2{
+
+h2 {
     color: #c14fb9;
     font-size: 24px;
-    margin-bottom: 10px;
-}
-footer {
-  display: flex;
-  justify-content: center;   /* centers the whole horizontally */
-  gap: 20px;                 /* space between paragraphs */
-  padding: 20px;
-  font-size: small;
-}
-img {
-  display: block;    /* ensures the image is treated as a block element */
-  margin: 0 auto;
+    margin-bottom: 5px;
+    text-align: center;
 }
 
+table caption {
+    font-weight: 800;
+    font-size: 1.5rem;
+}
 
-   
+th,
+td {
+    text-align: left;
+    padding: 8px;
+}
 
+tr {
+    border-bottom: thin solid black;
+}
 
+thead tr {
+    background-color: darkblue;
+    color: cornsilk;
+}
 
+tbody tr:nth-child(even) {
+    background-color: rgb(142, 219, 126);
+}
 
+tbody tr:hover {
+    background-color: rgb(101, 141, 232);
+}
 
+input,
+textarea,
+select {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+input[type="submit"] {
+    width: auto;
+    padding: 0.5em 1em;
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}

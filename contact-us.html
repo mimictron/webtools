@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Anna Batchelor" />
+    <meta
+      name="description"
+      content="This page includes content assisted by AI tools."
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact US</title>
+  </head>
+  <body>
+    <header>
+      <h1>Contact Us</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="contact-us.html">Contact Us</a></li>
+      </ul>
+      <ul>
+        <li><a href="index.html#About Me">About Me</a></li>
+        <li>
+          <a href="index.html#Web Development">My Web Development Journey</a>
+        </li>
+        <li><a href="index.html#Luigi">Luigi</a></li>
+      </ul>
+    </nav>
+    <main>
+      <fieldset id="contactForm">
+        <legend>Contact Us</legend>
+        <h3>Contact Information</h3>
+        <form name="contact-us" action="success.html" method="get">
+          <p>
+            <label for="name">Name </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Name"
+              required
+              title="Enter your full name."
+            />
+          </p>
+          <p>
+            <label for="email"> E-Mail</label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Email"
+              required
+              title="Enter your email address."
+            />
+          </p>
+          <p>
+            <label for="phone">Phone Number:</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              pattern="\d{3}[-]\d{3}[-]\d{4}"
+              placeholder="123-456-7890"
+              title="Please enter a phone number in the format: ###-###-####"
+            />
+          </p>
+          <p>
+            <label title="Type of phone number">Phone type</label>
+            <select name="phoneType">
+              <option value="">Select Phone Type</option>
+              <option value="1">Home</option>
+              <option value="2">Cell</option>
+              <option value="3">Work</option>
+            </select>
+          </p>
+
+          <p>Preferred Contact Method:</p>
+          <p>
+            <label>
+              <input
+                type="radio"
+                name="contactMethod"
+                value="email"
+                required
+              />Email</label
+            ><br />
+            <label>
+              <input
+                type="radio"
+                name="contactMethod"
+                value="phone"
+              />Phone</label
+            ><br />
+            <label>
+              <input type="radio" name="contactMethod" value="none" />No
+              Contact</label
+            >
+          </p>
+          <p>
+            <label>
+              <input type="checkbox" name="optIn" value="yes" />I’d like to
+              receive updates and special offers by email.</label
+            >
+          </p>
+          <p>
+            <label for="comment">Comment</label><br />
+            <textarea id="comment" name="comment"></textarea>
+          </p>
+          <input type="submit" name="submit" value="Submit" />
+          <input type="reset" name="reset" value="Reset" />
+        </form>
+      </fieldset>
+    </main>
+    <footer>
+      <p>
+        <a href="https://www.dallascollege.edu/pages/default.aspx"
+          >Dallas College</a
+        >
+      </p>
+      <p><a href="mailto:a.gore.batch@gmail.com">Email the Webmaster</a></p>
+    </footer>
+  </body>
+</html>
