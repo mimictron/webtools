@@ -57,10 +57,13 @@ footer {
     text-align: center;
     gap: 20px;
     background-color:#559873;
+    font-size: 20px;
+    
 }
 footer a{
     color:#f9eed6;
     text-decoration: none;
+    
 }
 
 
