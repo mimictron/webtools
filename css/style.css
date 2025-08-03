@@ -1,10 +1,28 @@
 /* Visual styles */
-header {
-    background-color: #f8f9fa;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
 }
 
+main{
+    margin: 15px;
+}
+
+header{
+    display: flex;
+    justify-content: center;  
+    align-items: center;               
+    text-align: center;
+    background-color: #7adaa5;
+}
+
+/* Navigation style */
+
 nav {
-    background-color: #46cb1e;
+    padding: 5px;
+    text-align: center;
+    background-color: #E1AA36;
 }
 nav a {
   color: #101010;         
@@ -19,13 +37,39 @@ nav a:visited {
   color: #444040;         
 }
 
+li {
+    display: flex;
+    margin: 15px;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: center;  
+    align-items: center;               
+    text-align: center;
+    gap: 20px;
+    background-color:#559873;
+}
+
+/* Other */
+
+section {
+    margin-bottom: 50px;
+}
 
 h2 {
-    color: #c14fb9;
-    font-size: 24px;
+    font-weight: 700;
+    font-size: 26px;
+    color: #239BA7;
     margin-bottom: 5px;
     text-align: center;
 }
+
+/* table style */
 
 table caption {
     font-weight: 800;
@@ -55,6 +99,10 @@ tbody tr:hover {
     background-color: rgb(101, 141, 232);
 }
 
+
+
+/* contact us */
+ 
 input,
 textarea,
 select {
@@ -71,9 +119,9 @@ label {
 input[type="submit"] {
     width: auto;
     padding: 0.5em 1em;
-    background-color: black;
+    background-color: #c8ebc2;
     border: none;
-    color: #fff;
+    color: black;
     border-radius: 4px;
     cursor: pointer;
     font-weight: bold;
@@ -81,4 +129,54 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: #0056b3;
+}
+
+input[type="reset"] {
+    width: auto;
+    padding: 0.5em 1em;
+    background-color: #f9eed6;
+    border: none;
+    color: black;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type="reset"]:hover {
+    background-color: #0056b3;
+}
+
+/* team page style */
+
+.team-member{
+    text-align: center;
+    background-color: #c8ebc2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+}
+
+.team-member img{
+    display: block;
+    margin: 0 auto 15px;
+    width: 200px;            
+    height: auto; 
+    border-radius: 12px;
+}
+
+
+/* product card style */
+.product{
+    text-align: center;
+    background-color: #f9eed6;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow:rgba(0, 0, 0, 0.1)
+}
+
+.product:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease-in-out;
 }
