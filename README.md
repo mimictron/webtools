@@ -2,7 +2,16 @@
 
 This website was created as part of a class project for a web development course.
 
-## Updates for This Week
+## Updates for Layouts assignment
+
+The following updates were made:
+
+- Added html pages for team and
+- created a grid layout for products and all page layouts
+- added a flex box layout for team member cards
+- updated color schemes and fonts
+
+## Updates for Enhancing the site assignment
 
 The following updates were made:
 
@@ -14,7 +23,7 @@ The following updates were made:
 
 - created a confimation page (success.html) for submission of contact-us.html form
 
-- Added a table with data that relates to my avatar 
+- Added a table with data that relates to my avatar
 
 - Separated layout styles (`layout.css`) from visual styles (`style.css`)
 
