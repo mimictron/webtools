@@ -1,5 +1,32 @@
 /* layout for page grid systems */
 
+/* This goes in layout.css or your main stylesheet */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column; /* Stack nav and content vertically */
+  }
+
+  nav {
+    width: 100%; /* Make sidebar take full width */
+    height: auto; /* Adjust height to content */
+  }
+
+  .product-container {
+    flex-direction: column; /* Stack product cards */
+    align-items: center;
+  }
+
+  .product {
+    width: 90%; /* Make each card take more space */
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    text-align: center;
+  }
+}
+
+
 .page-grid {
   display: grid;
   min-height: 100vh;
