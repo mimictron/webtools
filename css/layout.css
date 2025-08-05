@@ -1,20 +1,13 @@
 /* layout for page grid systems */
 
 @media (max-width: 768px) {
-
-
   nav ul {
     padding: 0;
     margin: 0;
   }
-  
   .product {
     margin: 0 auto 20px;
   }
-
-  
-
-  
 }
 
 /* Page Layout */
