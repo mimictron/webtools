@@ -13,28 +13,59 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://www.w3schools.com/lib/w3-theme-cyan.css"
+    />
     <link rel="shortcut icon" href="favicon.ico" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Anna Batchelor</title>
+    <title>Home || Anna Batchelor</title>
   </head>
   <body>
     <div class="page-grid">
-      <header class="header"><h1>WELCOME</h1></header>
+      <header class="header w3-theme"><h1>WELCOME</h1></header>
       <nav class="sidebar">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="team.html">About Us</a></li>
-          <li><a href="contact-us.html">Contact Us</a></li>
-          <li><a href="products.html">Our Products</a></li>
-        </ul>
-        <ul>
-          <li><a href="#About-Me">About Me</a></li>
-          <li><a href="#Web-Development">My Journey</a></li>
-          <li><a href="#Luigi">Luigi</a></li>
-        </ul>
+        <div class="navLayout">
+          <div>
+            <a href="signIn.html" class="w3-button w3-theme-l4 w3-round-large"
+              >Sign In</a
+            >
+          </div>
+          <div>
+            <ul class="w3-ul w3-hoverable w3-round-large">
+              <li>
+                <a href="index.html"><i class="fa fa-home"></i> Home</a>
+              </li>
+              <li>
+                <a href="team.html">Our Team</a>
+              </li>
+              <li>
+                <a href="contact-us.html">Contact Us</a>
+              </li>
+              <li>
+                <a href="products.html">Our Products</a>
+              </li>
+              <li>
+                <a href="about.html">About Me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
       <main class="main">
+        <nav class="homeSubNav">
+          <ul>
+            <li><a href="#About-Me">About Me</a></li>
+            <li><a href="#Web-Development">My Journey</a></li>
+            <li><a href="#Luigi">Luigi</a></li>
+          </ul>
+        </nav>
         <section>
           <h2 id="About-Me">About Me</h2>
           <a href="images/mimicHatchBig.png">
@@ -122,8 +153,7 @@
               ><strong>Read more about Luigi</strong></a
             >
           </p>
-
-          <table>
+          <table class="w3-table w3-striped w3-centered w3-border">
             <caption>
               Luigi Video Game Releases
             </caption>
@@ -174,13 +204,34 @@
           </table>
         </section>
       </main>
-      <footer class="footer">
-        <p>
-          <a href="https://www.dallascollege.edu/pages/default.aspx"
-            >Dallas College</a
-          >
-        </p>
-        <p><a href="mailto:a.gore.batch@gmail.com">Email the Webmaster</a></p>
+      <footer class="footer w3-theme-d3">
+        <div class="footerLayout">
+          <div class="footer-col">
+            <ul>
+              <li>
+                <a href="https://www.dallascollege.edu/pages/default.aspx"
+                  >Dallas College</a
+                >
+              </li>
+              <li><a href="https://www.chatgpt.com">ChatGPT</a></li>
+              <li><a href="https://copilot.microsoft.com/chats">Copilot</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <p>&copy; 2025</p>
+            <p>
+              <a href="mailto:a.gore.batch@gmail.com">Email the Webmaster</a>
+            </p>
+          </div>
+          <div class="footer-col">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="team.html">About Us</a></li>
+              <li><a href="contact-us.html">Contact Us</a></li>
+              <li><a href="products.html">Our Products</a></li>
+            </ul>
+          </div>
+        </div>
       </footer>
     </div>
   </body>

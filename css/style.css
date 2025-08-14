@@ -18,10 +18,18 @@ header{
     justify-content: center;  
     align-items: center;               
     text-align: center;
-    background-color: #7adaa5;
+    
 }
 
 /* Navigation style */
+.signin-btn {
+  background-color: #559873; /* button background */
+  color: white; 
+  padding: 10px 20px; 
+  text-decoration: none; 
+  border-radius: 5px; /* rounded corners */
+  font-weight: bold; 
+}
 
 nav {
     padding: 5px;
@@ -42,30 +50,29 @@ nav a:visited {
 }
 
 li {
-    display: flex;
-    margin: 15px;
+    display: block;
+    margin: 0px;
     font-size: 20px;
-    margin-right: 20px;
+    padding: 10px;
+    
+}
+.homeSubNav li{
+    display:inline;
 }
 
 /* Footer */
 
-footer {
-    display: flex;
-    justify-content: center;  
-    align-items: center;               
-    text-align: center;
-    gap: 20px;
-    background-color:#3b6a50;
-    font-size: 15px;
+footer { 
+    font-size: 12px;
     font-weight: Bold;
-    
+   
 }
 footer a{
     color:white;
     text-decoration: none;
-    
-}
+    font-size: 12px;
+    }
+
 
 
 /* Other */
@@ -104,59 +111,9 @@ thead tr {
     color: cornsilk;
 }
 
-tbody tr:nth-child(even) {
-    background-color: rgb(142, 219, 126);
-}
 
 tbody tr:hover {
-    background-color: rgb(101, 141, 232);
-}
-
-
-
-/* contact us */
- 
-input,
-textarea,
-select {
-    padding: 0.5em;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-label {
-    font-weight: bold;
-    margin-top: 1em;
-}
-
-input[type="submit"] {
-    width: auto;
-    padding: 0.5em 1em;
-    background-color: #c8ebc2;
-    border: none;
-    color: black;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-input[type="submit"]:hover {
-    background-color: #0056b3;
-}
-
-input[type="reset"] {
-    width: auto;
-    padding: 0.5em 1em;
-    background-color: #f9eed6;
-    border: none;
-    color: black;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-input[type="reset"]:hover {
-    background-color: #0056b3;
+    background-color: rgb(101, 141, 232) !important;
 }
 
 /* team page style */
@@ -200,3 +157,7 @@ input[type="reset"]:hover {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   transition: all 0.2s ease-in-out;
 }
+
+
+
+

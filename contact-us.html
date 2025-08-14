@@ -6,38 +6,78 @@
       name="description"
       content="This page includes content assisted by AI tools."
     />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://www.w3schools.com/lib/w3-theme-cyan.css"
+    />
     <link rel="shortcut icon" href="favicon.ico" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact US</title>
+    <title>Contact || Anna Batchelor</title>
   </head>
   <body>
     <div class="page-grid">
-      <header class="header"><h1>Contact Us</h1></header>
+      <header class="header w3-theme"><h1>Contact Us</h1></header>
 
       <nav class="sidebar">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="team.html">About Us</a></li>
-          <li><a href="contact-us.html">Contact Us</a></li>
-          <li><a href="products.html">Our Products</a></li>
-        </ul>
+        <div class="navLayout">
+          <div>
+            <a href="signIn.html" class="w3-button w3-theme-l4 w3-round-large"
+              >Sign In</a
+            >
+          </div>
+          <div>
+            <ul class="w3-ul w3-hoverable w3-round-large">
+              <li>
+                <a href="index.html"><i class="fa fa-home"></i> Home</a>
+              </li>
+              <li>
+                <a href="team.html">Our Team</a>
+              </li>
+              <li>
+                <a href="contact-us.html">Contact Us</a>
+              </li>
+              <li>
+                <a href="products.html">Our Products</a>
+              </li>
+              <li>
+                <a href="about.html">About Me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
 
       <main class="main">
-        <fieldset id="contactForm">
-          <legend>Contact Us</legend>
-          <h2>Contact Information</h2>
-          <form name="contact-us" action="success.html" method="get">
+        <fieldset
+          id="contactForm"
+          class="w3-container w3-card w3-padding w3-round"
+        >
+          <legend class="w3-xlarge">Contact Us</legend>
+          <h2 class="w3-text-black">Contact Information</h2>
+
+          <form
+            name="contact-us"
+            action="success.html"
+            method="get"
+            class="w3-container"
+          >
             <p>
-              <label for="name">Name </label>
+              <label for="name" class="w3-text-black"><b>Name</b></label>
               <input
+                class="w3-input w3-border w3-round"
                 type="text"
                 id="name"
                 name="name"
@@ -46,9 +86,11 @@
                 title="Enter your full name."
               />
             </p>
+
             <p>
-              <label for="email"> E-Mail</label>
+              <label for="email" class="w3-text-black"><b>E-Mail</b></label>
               <input
+                class="w3-input w3-border w3-round"
                 type="text"
                 id="email"
                 name="email"
@@ -57,9 +99,13 @@
                 title="Enter your email address."
               />
             </p>
+
             <p>
-              <label for="phone">Phone Number:</label>
+              <label for="phone" class="w3-text-black"
+                ><b>Phone Number</b></label
+              >
               <input
+                class="w3-input w3-border w3-round"
                 type="tel"
                 id="phone"
                 name="phone"
@@ -68,9 +114,16 @@
                 title="Please enter a phone number in the format: ###-###-####"
               />
             </p>
+
             <p>
-              <label for="phoneType">Phone type</label>
-              <select name="phoneType" id="phoneType">
+              <label for="phoneType" class="w3-text-black"
+                ><b>Phone type</b></label
+              >
+              <select
+                class="w3-select w3-border w3-round"
+                name="phoneType"
+                id="phoneType"
+              >
                 <option value="">Select Phone Type</option>
                 <option value="1">Home</option>
                 <option value="2">Cell</option>
@@ -78,50 +131,108 @@
               </select>
             </p>
 
-            <p>Preferred Contact Method:</p>
+            <p class="w3-margin-top"><b>Preferred Contact Method:</b></p>
             <p>
-              <label>
+              <label class="w3-margin-right">
                 <input
+                  class="w3-radio"
                   type="radio"
                   name="contactMethod"
                   value="email"
                   required
-                />Email</label
-              ><br />
-              <label>
+                />
+                Email
+              </label>
+              <label class="w3-margin-right">
                 <input
+                  class="w3-radio"
                   type="radio"
                   name="contactMethod"
                   value="phone"
-                />Phone</label
-              ><br />
+                />
+                Phone
+              </label>
               <label>
-                <input type="radio" name="contactMethod" value="none" />No
-                Contact</label
-              >
+                <input
+                  class="w3-radio"
+                  type="radio"
+                  name="contactMethod"
+                  value="none"
+                />
+                No Contact
+              </label>
             </p>
+
             <p>
               <label>
-                <input type="checkbox" name="optIn" value="yes" />I’d like to
-                receive updates and special offers by email.</label
-              >
+                <input
+                  class="w3-check"
+                  type="checkbox"
+                  name="optIn"
+                  value="yes"
+                />
+                I’d like to receive updates and special offers by email.
+              </label>
             </p>
+
             <p>
-              <label for="comment">Comment</label><br />
-              <textarea id="comment" name="comment"></textarea>
+              <label for="comment" class="w3-text-black"><b>Comment</b></label>
+              <textarea
+                class="w3-input w3-border w3-round"
+                id="comment"
+                name="comment"
+              ></textarea>
             </p>
-            <input type="submit" name="submit" value="Submit" />
-            <input type="reset" name="reset" value="Reset" />
+
+            <p>
+              <input
+                class="w3-button w3-green w3-round-large"
+                type="submit"
+                name="submit"
+                value="Submit"
+              />
+              <input
+                class="w3-button w3-gray w3-round-large"
+                type="reset"
+                name="reset"
+                value="Reset"
+              />
+            </p>
           </form>
         </fieldset>
       </main>
-      <footer class="footer">
-        <p>
-          <a href="https://www.dallascollege.edu/pages/default.aspx"
-            >Dallas College</a
-          >
-        </p>
-        <p><a href="mailto:a.gore.batch@gmail.com">Email the Webmaster</a></p>
+
+      <footer class="footer w3-theme-d3">
+        <div class="footerLayout">
+          <div class="footer-col">
+            <ul>
+              <li>
+                <a href="https://www.dallascollege.edu/pages/default.aspx"
+                  >Dallas College</a
+                >
+              </li>
+              <li><a href="https://www.chatgpt.com">ChatGPT</a></li>
+              <li><a href="https://copilot.microsoft.com/chats">Copilot</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <p>&copy; 2025</p>
+            <p>
+              <a href="mailto:a.gore.batch@gmail.com">Email the Webmaster</a>
+            </p>
+          </div>
+          <div class="footer-col">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="team.html">Our Team</a></li>
+              <li><a href="contact-us.html">Contact Us</a></li>
+              <li><a href="products.html">Our Products</a></li>
+              <li>
+                <a href="about.html">About Me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </footer>
     </div>
   </body>
